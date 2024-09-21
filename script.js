@@ -4,6 +4,7 @@ function cambiarColorRedes() {
     const imagtwitter = document.querySelectorAll('.twitter');
     const imaginstagram = document.querySelectorAll('.instagram');
 
+    if(window.innerWidth>576){
     imafacebook.forEach(element=>{
 
         element.addEventListener('mouseover', () => {
@@ -41,5 +42,5 @@ function cambiarColorRedes() {
         
     }) 
 }
-
+}
 cambiarColorRedes();

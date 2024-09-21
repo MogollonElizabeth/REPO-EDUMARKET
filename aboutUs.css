@@ -145,36 +145,28 @@ body {
 }
 
 /*PERFILES*/
-
 .alinear-perfiles {
     max-width: 500px;
     margin-left:70px; 
     margin-top: 50px;
   }
-  
   .alinear-perfiles p{
 
     margin-top:30%;
-
   }
-  /* Asegura que el contenedor del texto no se desborde en pantallas pequeñas */
   @media (max-width: 576px) {
    
-  
     .alinear-perfiles {
       max-width: 100%;
         margin-left: 0;   
         margin-right: 0;  
         padding: 10px;    
     }
-    
   }
 .rounded-circle:hover{
 
    width: 42%;
    height: auto;
-
-
 }
   .color-perfiles{
 
@@ -196,19 +188,36 @@ body {
         margin-left: 27px;
         height: auto;
         max-width: 100%;  /*Hace que la imagen sea responsiva y nunca exceda el ancho del contenedor en el que está.*/
-        
+    }
+    @media(max-width:576px){
+      
+      .posi-imagenes-redes{
+        margin-left: -13px;
+        display: flex;
+        max-width: 100%;
+        flex-direction: row;
+      }
+      .imagen-red-social{
+
+        width: 30px;
+      }
     }
     .imagen-red-social:hover{
 
         width: 17%;
-
     }
 
+    @media(max-width: 576px) {
+      .imagen-red-social:hover {
+        display: flex;  
+        flex-direction: row;
+        width: 23px;
+      }
+  }
    .posi-imagenes-redes{
 
     margin-right:13%;
     margin-top: 10%;
-
    }
 
   
