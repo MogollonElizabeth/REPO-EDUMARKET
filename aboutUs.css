@@ -63,11 +63,12 @@ ol,ul{
     max-height: 0;
     overflow: hidden;
     display: flex;
-    flex-direction: column; /* Mantenerlo en columna para el menú en responsive */
-    justify-content: flex-start; /* Alinea los enlaces a la izquierda */
-    align-items: flex-start; /* Alinea los enlaces a la izquierda */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 20px;
-    transition: max-height 0.3s ; /* Asegúrate de usar una transición suave */
+    transition: max-height 0.3s ;
+    z-index: 10;
 }
 
 
@@ -80,7 +81,7 @@ ol,ul{
 }
 
 .logos-right {
-    display: flex; /* Asegura que los logos se alineen horizontalmente */
+    display: flex;
 }
 
 .icon-log {
@@ -114,12 +115,12 @@ ol,ul{
     
 }
 
-@media (max-width: 768px) { /* Cambia este valor según tu diseño */
+@media (max-width: 768px) { 
     .logos-right {
-        display: none; /* Oculta los logos en pantallas pequeñas */
+        display: none;
     }
     .logo {
-        margin-left: -10px; /* Ajusta este valor según lo necesites */
+        margin-left: -10px;
     }
 }
 
@@ -182,3 +183,42 @@ ol,ul{
     color: black;
 }
 
+.bg-custom-g{
+    background-color: #e3e4e5;
+}
+
+.row {
+    display: flex;
+}
+.bg-custom {
+    background-color: #1A88DC;
+}
+
+
+.col-md-6 {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.col-md-6 h1 {
+    font-size: 2.5rem;
+}
+
+.col-md-6 h6 {
+    font-size: 1.5rem;
+}
+
+.col-md-6 p {
+    font-size: 1rem;
+}
